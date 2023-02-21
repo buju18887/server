@@ -33,7 +33,7 @@ const app = express();
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
-app.use(cors({ origin: "*" }));
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
